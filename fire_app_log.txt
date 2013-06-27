@@ -1910,7 +1910,6 @@
 2013-06-27 16:34:08 identical css/normalize.css 
 2013-06-27 16:34:08 identical css/print.css 
 2013-06-27 16:34:08 identical css/screen.css 
->>>>>>> master
 2013-06-27 16:36:10 identical css/ie.css 
 2013-06-27 16:36:10 identical css/main.css 
 2013-06-27 16:36:10 identical css/normalize.css 
