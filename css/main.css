@@ -8,7 +8,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 19, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 html,
 button,
 input,
@@ -18,7 +18,7 @@ textarea {
   color: #333;
 }
 
-/* line 25, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 body,
 p {
   font-size: 1.125rem;
@@ -31,13 +31,13 @@ p {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 37, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -46,7 +46,7 @@ p {
 /*
  * A better looking default horizontal rule
  */
-/* line 51, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -59,7 +59,7 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 64, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 img {
   vertical-align: middle;
 }
@@ -67,7 +67,7 @@ img {
 /*
  * Remove default fieldset styles.
  */
-/* line 72, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -77,7 +77,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 82, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 textarea {
   resize: vertical;
 }
@@ -85,7 +85,7 @@ textarea {
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 90, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -96,7 +96,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 102, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 section,
 div {
   -webkit-box-sizing: border-box;
@@ -104,63 +104,250 @@ div {
   box-sizing: border-box;
 }
 
-/* line 106, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* line 118, ../sass/main.scss */
+.action {
+  /* wrapper for an icon group */
+  float: right;
+}
+
+/* line 129, ../sass/main.scss */
+.meta-text {
+  font-size: 0.875rem;
+}
+
+/* line 133, ../sass/main.scss */
+.status-text {
+  font-size: 0.75rem;
+  text-shadow: white 1 1 0;
+}
+
+/* line 139, ../sass/main.scss */
 #content-wrapper {
   margin-top: 3rem;
 }
 
-/* line 110, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .bar {
   width: 100%;
   padding: 0.5rem;
 }
-/* line 114, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 .bar.nav {
   background-color: #222;
   color: #d3d3d3;
   position: fixed;
   top: 0;
   z-index: 9;
+  height: 3rem;
+  border-bottom: 1px #000 solid;
   -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 0 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.7) 0 0 5px;
   box-shadow: rgba(0, 0, 0, 0.7) 0 0 5px;
 }
-/* line 122, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
+.bar.nav .current {
+  color: #d3d3d3;
+  display: none;
+  padding: 0 1rem;
+  min-width: 6rem;
+}
+/* line 164, ../sass/main.scss */
+.bar.nav ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  overflow: visible;
+}
+/* line 60, ../../../../Downloads/fire.app.windows.v1.11/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.bar.nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../Downloads/fire.app.windows.v1.11/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.bar.nav ul li:first-child, .bar.nav ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../Downloads/fire.app.windows.v1.11/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.bar.nav ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../Downloads/fire.app.windows.v1.11/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.bar.nav ul li.last {
+  padding-right: 0;
+}
+/* line 169, ../sass/main.scss */
+.bar.nav ul li {
+  height: 2rem;
+  position: relative;
+}
+/* line 175, ../sass/main.scss */
+.bar.nav ul a {
+  display: block;
+  color: #d3d3d3;
+  text-align: center;
+}
+/* line 182, ../sass/main.scss */
+.bar.nav ul a:hover, .bar.nav ul a:focus, .bar.nav ul a:active {
+  color: #fff;
+}
+/* line 189, ../sass/main.scss */
+.bar.nav .main-menu li {
+  width: 10%;
+  min-width: 6rem;
+}
+/* line 193, ../sass/main.scss */
+.bar.nav .main-menu li:not(:first-child) {
+  margin-left: 1px;
+}
+/* line 196, ../sass/main.scss */
+.bar.nav .main-menu li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0.25rem;
+  height: 1.5rem;
+  border-left: 1px #666 solid;
+}
+/* line 206, ../sass/main.scss */
+.bar.nav .main-menu li.on {
+  border-bottom: 0.5rem #33B5E5 solid;
+}
+/* line 213, ../sass/main.scss */
+.bar.nav .action li {
+  width: 3rem;
+}
+/* line 216, ../sass/main.scss */
+.bar.nav .action li.profile-menu {
+  margin-left: 1rem;
+}
+/* line 219, ../sass/main.scss */
+.bar.nav .action li.profile-menu::before {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  top: 0.25rem;
+  height: 1.5rem;
+  border-left: 1px #666 solid;
+}
+/* line 228, ../sass/main.scss */
+.bar.nav .action li.profile-menu ul {
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+  border-width: 0 1px;
+  border-color: #000;
+  border-style: solid;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: black 0 0 5px;
+  -moz-box-shadow: black 0 0 5px;
+  box-shadow: black 0 0 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+/* line 240, ../sass/main.scss */
+.bar.nav .action li.profile-menu ul li {
+  background-color: #222;
+  display: block;
+  float: none;
+  width: auto;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px #333 solid;
+  border-bottom: 1px #000 solid;
+}
+/* line 251, ../sass/main.scss */
+.bar.nav .action li.profile-menu ul li a {
+  text-align: left;
+}
+/* line 264, ../sass/main.scss */
 .bar.nav .highlight {
   border-bottom: 6px #33B5E5;
 }
-/* line 133, ../sass/main.scss */
+/* line 272, ../sass/main.scss */
 .bar.level-1 {
   background-color: #fff;
   position: relative;
+  padding: 0 0.5rem;
   z-index: 8;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
 }
-/* line 139, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 .bar.level-1::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  border-bottom: 1px #bbb solid;
+  border-bottom: 1px #ccc solid;
 }
-/* line 148, ../sass/main.scss */
+/* line 288, ../sass/main.scss */
 .bar.level-1 .phase {
-  padding: 0 1rem 1rem 1rem;
+  height: 3rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 1px #333 solid;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
 }
-/* line 152, ../sass/main.scss */
+/* line 299, ../sass/main.scss */
+.bar.level-1 .phase.admission {
+  background-color: #6BAED6;
+}
+/* line 302, ../sass/main.scss */
+.bar.level-1 .phase.discussion {
+  background-color: #4292C6;
+}
+/* line 305, ../sass/main.scss */
+.bar.level-1 .phase.verification {
+  background-color: #2171B5;
+}
+/* line 308, ../sass/main.scss */
+.bar.level-1 .phase.voting {
+  background-color: #08519C;
+}
+/* line 313, ../sass/main.scss */
 .bar.level-1 .time-left {
   color: #999;
 }
-/* line 161, ../sass/main.scss */
+/* line 322, ../sass/main.scss */
 .bar.level-2 {
   background-color: #eee;
   position: relative;
 }
-/* line 165, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 .bar.level-2::before {
   content: "";
   position: absolute;
@@ -169,53 +356,37 @@ div {
   width: 100%;
   border-top: 1px #fff solid;
 }
-/* line 174, ../sass/main.scss */
+/* line 335, ../sass/main.scss */
 .bar.level-2::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  border-bottom: 1px #aaa solid;
+  border-bottom: 1px #ccc solid;
 }
-/* line 187, ../sass/main.scss */
+/* line 348, ../sass/main.scss */
 .bar.level-3 {
   background-color: #ddd;
   position: relative;
 }
-/* line 191, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 .bar.level-3::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  border-top: 1px #fff solid;
+  border-top: 1px #eee solid;
 }
-/* line 200, ../sass/main.scss */
+/* line 361, ../sass/main.scss */
 .bar.level-3::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  border-bottom: 1px #aaa solid;
-}
-
-/* line 215, ../sass/main.scss */
-.actions {
-  /* wrapper for an icon group */
-  float: right;
-}
-
-/* line 223, ../sass/main.scss */
-.icon-description-text {
-  font-size: 0.75rem;
-}
-
-/* line 227, ../sass/main.scss */
-.meta-text {
-  font-size: 0.875rem;
+  border-bottom: 1px #ccc solid;
 }
 
 /* ==========================================================================
@@ -224,7 +395,7 @@ div {
 /*
  * Image replacement
  */
-/* line 247, ../sass/main.scss */
+/* line 392, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -233,7 +404,7 @@ div {
   *text-indent: -9999px;
 }
 
-/* line 255, ../sass/main.scss */
+/* line 400, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -244,7 +415,7 @@ div {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 266, ../sass/main.scss */
+/* line 411, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -253,7 +424,7 @@ div {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 275, ../sass/main.scss */
+/* line 420, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -269,7 +440,7 @@ div {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 292, ../sass/main.scss */
+/* line 437, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -283,7 +454,7 @@ div {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 305, ../sass/main.scss */
+/* line 450, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -299,7 +470,7 @@ div {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 322, ../sass/main.scss */
+/* line 467, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -308,7 +479,7 @@ div {
   /* 2 */
 }
 
-/* line 327, ../sass/main.scss */
+/* line 472, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -317,7 +488,7 @@ div {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 336, ../sass/main.scss */
+/* line 481, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -327,8 +498,68 @@ div {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 45rem) {
   /* Style adjustments for viewports that meet the condition */
+  /* line 494, ../sass/main.scss */
+  .bar.nav .current {
+    display: inline-block;
+  }
+  /* line 498, ../sass/main.scss */
+  .bar.nav ul.main-menu {
+    position: absolute;
+    left: 0.5rem;
+    top: 3rem;
+    border-width: 0 1px;
+    border-color: #000;
+    border-style: solid;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: black 0 0 5px;
+    -moz-box-shadow: black 0 0 5px;
+    box-shadow: black 0 0 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  /* line 510, ../sass/main.scss */
+  .bar.nav ul.main-menu li {
+    background-color: #222;
+    display: block;
+    float: none;
+    width: auto;
+    height: 3rem;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 1px #333 solid;
+    border-bottom: 1px #000 solid;
+  }
+  /* line 522, ../sass/main.scss */
+  .bar.nav ul.main-menu li:not(:first-child) {
+    margin-left: 0;
+  }
+  /* line 524, ../sass/main.scss */
+  .bar.nav ul.main-menu li:not(:first-child) ::before {
+    display: none;
+  }
+  /* line 529, ../sass/main.scss */
+  .bar.nav ul.main-menu li:first-child {
+    padding-left: 1rem;
+  }
+  /* line 533, ../sass/main.scss */
+  .bar.nav ul.main-menu li a {
+    text-align: left;
+  }
+  /* line 537, ../sass/main.scss */
+  .bar.nav ul.main-menu li.on {
+    border: none;
+  }
 }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
@@ -338,7 +569,7 @@ div {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 363, ../sass/main.scss */
+  /* line 558, ../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -347,18 +578,18 @@ div {
     text-shadow: none !important;
   }
 
-  /* line 371, ../sass/main.scss */
+  /* line 566, ../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 375, ../sass/main.scss */
+  /* line 570, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 379, ../sass/main.scss */
+  /* line 574, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -366,33 +597,33 @@ div {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 389, ../sass/main.scss */
+  /* line 584, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 394, ../sass/main.scss */
+  /* line 589, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 399, ../sass/main.scss */
+  /* line 594, ../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 404, ../sass/main.scss */
+  /* line 599, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 408, ../sass/main.scss */
+  /* line 603, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -401,7 +632,7 @@ div {
     margin: 0.5cm;
 }
 
-  /* line 418, ../sass/main.scss */
+  /* line 613, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -409,7 +640,7 @@ div {
     widows: 3;
   }
 
-  /* line 424, ../sass/main.scss */
+  /* line 619, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;
