@@ -1,4 +1,5 @@
 @import "compass/css3";
+@import "compass/utilities/lists/horizontal-list";
 
 /*
  * HTML5 Boilerplate
@@ -103,6 +104,38 @@ div {
     @include box-sizing(border-box);
 }
 
+a {
+    text-decoration: none;
+    color: #333;
+
+    &.link,
+    &:hover,
+    &:focus,
+    &:active {
+    }
+}
+
+.action { /* wrapper for an icon group */
+    float: right;
+
+    .action-icon {
+    }
+}
+
+.help-text {
+
+}
+
+.meta-text {
+    font-size: 0.875rem;
+}
+
+.status-text {
+    font-size: 0.75rem;
+    @include text-shadow(#fff 1 1 0);
+}
+
+
 #content-wrapper {
     margin-top: 3rem;
 }
@@ -117,15 +150,121 @@ div {
         position: fixed;
         top: 0;
         z-index: 9;
+        height: 3rem;
+        border-bottom: 1px #000 solid;
         @include box-shadow(rgba(black, 0.7) 0 0 5px);
+
+        .current {
+            color: #d3d3d3;
+            display: none;
+            padding: 0 1rem;
+            min-width: 6rem;
+        }
+
+        ul {
+            display: inline;
+            @include horizontal-list;
+            overflow: visible;
+
+            li {
+                height: 2rem;
+                position: relative;
+
+            }
+
+            a {
+                display: block;
+                color: #d3d3d3;
+                text-align: center;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: #fff;
+                }
+            }
+        }
+
+        .main-menu {
+            li {
+                width: 10%;
+                min-width: 6rem;
+
+                &:not(:first-child) {
+                    margin-left: 1px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: -1px;
+                        top: 0.25rem;
+                        height: 1.5rem;
+                        border-left: 1px #666 solid;
+                    }
+                }
+
+                &.on {
+                    border-bottom: 0.5rem #33B5E5 solid;
+                }
+            }
+        }
+
+        .action {
+            li {
+                width: 3rem;
+
+            &.profile-menu {
+                margin-left: 1rem;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -0.5rem;
+                    top: 0.25rem;
+                    height: 1.5rem;
+                    border-left: 1px #666 solid;
+                }
+
+                ul {
+                    position: absolute;
+                    right: 0;
+                    top: 2.5rem;
+                    border-width: 0 1px;
+                    border-color: #000;
+                    border-style: solid;
+                    @include box-sizing(border-box);
+                    @include box-shadow(rgba(black, 1) 0 0 5px);
+                    @include border-radius(3px);
+                    overflow: hidden;
+
+                    li {
+                        background-color: #222;
+                        display: block;
+                        float: none;
+                        width: auto;
+                        height: 3rem;
+                        padding: 0.5rem 1rem;
+                        @include box-sizing(border-box);
+                        border-top: 1px #333 solid;
+                        border-bottom: 1px #000 solid;
+
+                        a {
+                            text-align: left;
+                        }
+
+                    }
+                }
+
+
+            }
+
+            }
+        }
 
         .highlight {
             border-bottom: 6px #33B5E5;            
         }
 
-        .seperation {
-            // #999;
-        }
     }
 
     &.member {}
@@ -133,6 +272,7 @@ div {
     &.level-1 {
         background-color: #fff;
         position: relative;
+        padding: 0 0.5rem;
         z-index: 8;
         @include box-shadow(rgba(black, 0.3) 0 0 5px);
 
@@ -142,11 +282,32 @@ div {
             left: 0;
             bottom: 0;
             width: 100%;
-            border-bottom: 1px #bbb solid;
+            border-bottom: 1px #ccc solid;
         }
 
         .phase {
-            padding: 0 1rem 1rem 1rem;
+            height: 3rem;            
+            padding: 0.5rem;
+            margin-right: 1rem;
+            display: inline-block;
+            font-weight: bold;
+            color: #fff;
+            border-bottom: 1px #333 solid;
+            @include box-sizing(border-box);
+            @include box-shadow(rgba(black, 0.5) 0 0 5px);
+
+            &.admission {
+                background-color: #6BAED6;
+            }
+            &.discussion {
+                background-color: #4292C6;
+            }
+            &.verification {
+                background-color: #2171B5;
+            }
+            &.voting {
+                background-color: #08519C;
+            }
         }
 
         .time-left {
@@ -177,7 +338,7 @@ div {
             left: 0;
             bottom: 0;
             width: 100%;
-            border-bottom: 1px #aaa solid;
+            border-bottom: 1px #ccc solid;
         }
 
         .seperation {
@@ -194,7 +355,7 @@ div {
             left: 0;
             top: 0;
             width: 100%;
-            border-top: 1px #fff solid;
+            border-top: 1px #eee solid;
         }
 
         &::after {
@@ -203,29 +364,13 @@ div {
             left: 0;
             bottom: 0;
             width: 100%;
-            border-bottom: 1px #aaa solid;
+            border-bottom: 1px #ccc solid;
         }
 
         .seperation {
             // #aaa;
         }
     }
-}
-
-.actions { /* wrapper for an icon group */
-    float: right;
-
-    .action-icons {
-
-    }
-}
-
-.icon-description-text {
-    font-size: 0.75rem;
-}
-
-.meta-text {
-    font-size: 0.875rem;
 }
 
 
@@ -343,8 +488,58 @@ div {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 45rem) {
     /* Style adjustments for viewports that meet the condition */
+    .bar.nav {
+        .current {
+            display: inline-block;
+        }
+
+        ul.main-menu {
+            position: absolute;
+            left: 0.5rem;
+            top: 3rem;
+            border-width: 0 1px;
+            border-color: #000;
+            border-style: solid;
+            @include box-sizing(border-box);
+            @include box-shadow(rgba(black, 1) 0 0 5px);
+            @include border-radius(3px);
+            overflow: hidden;
+
+            li {
+                background-color: #222;
+                display: block;
+                float: none;
+                width: auto;
+                height: 3rem;
+                margin: 0;
+                padding: 0.5rem 1rem;
+                @include box-sizing(border-box);
+                border-top: 1px #333 solid;
+                border-bottom: 1px #000 solid;
+
+                &:not(:first-child) {
+                    margin-left: 0;
+                    ::before {
+                        display: none;
+                    }
+                }
+
+                &:first-child {
+                    padding-left: 1rem;
+                }
+
+                a {
+                    text-align: left;
+                }
+
+                &.on {
+                    border: none;
+                }
+            }
+        }
+    }
 }
 
 @media print,
