@@ -331,8 +331,8 @@ a {
     @include box-shadow(rgba(black, 1) 0 0 5px);
 
     .current {
-        color: #d3d3d3;
         display: none;
+        color: #fff;
         padding: 0 1rem;
         min-width: 6rem;
     }
@@ -373,6 +373,9 @@ a {
 
             &.on {
                 border-bottom: 0.5rem #33B5E5 solid;
+                a {
+                    color: #fff;
+                }
             }
         }
     }
@@ -423,7 +426,6 @@ a {
         padding: 0.5rem;
         margin-right: 1rem;
         display: inline-block;
-        font-weight: bold;
         color: #fff;
         @include text-shadow(rgba(black, 0.5) -1px -1px 0);
         @include box-sizing(border-box);
@@ -588,6 +590,10 @@ a {
             @include box-shadow(rgba(black, 1) 0 0 5px);
             @include border-radius(3px);
 
+            .current {
+                color: #fff;
+            }
+
             li {
                 @include dropdown-li;
                 @include box-sizing(border-box);
@@ -610,6 +616,9 @@ a {
                 &.on {
                     border-top: 1px #3e3e3e solid;
                     border-bottom: 0;
+                    a {
+                        color: #d3d3d3;
+                    }
                 }
             }
         }
