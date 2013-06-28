@@ -554,13 +554,64 @@ a {
   border-bottom: 1px #cccccc solid;
 }
 
+/* line 471, ../sass/main.scss */
+.level-4 {
+  background-color: #ccc;
+  padding: 0.5rem 1rem;
+}
+/* line 102, ../sass/main.scss */
+.level-4 {
+  position: relative;
+}
+/* line 106, ../sass/main.scss */
+.level-4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-top: 1px #dddddd solid;
+}
+/* line 117, ../sass/main.scss */
+.level-4 {
+  position: relative;
+}
+/* line 121, ../sass/main.scss */
+.level-4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px #cccccc solid;
+}
+
+/* line 479, ../sass/main.scss */
+.issue-detail-title .level-1 {
+  position: fixed;
+  top: 3rem;
+}
+
+/* line 485, ../sass/main.scss */
+.issue-detail-content {
+  margin-top: 6rem;
+}
+
+/* line 490, ../sass/main.scss */
+.initiative-wrapper .initiative-title {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
  * Image replacement
  */
-/* line 481, ../sass/main.scss */
+/* line 506, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -569,7 +620,7 @@ a {
   *text-indent: -9999px;
 }
 
-/* line 489, ../sass/main.scss */
+/* line 514, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -580,7 +631,7 @@ a {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 500, ../sass/main.scss */
+/* line 525, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -589,7 +640,7 @@ a {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 509, ../sass/main.scss */
+/* line 534, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -605,7 +656,7 @@ a {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 526, ../sass/main.scss */
+/* line 551, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -619,7 +670,7 @@ a {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 539, ../sass/main.scss */
+/* line 564, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -635,7 +686,7 @@ a {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 556, ../sass/main.scss */
+/* line 581, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -644,7 +695,7 @@ a {
   /* 2 */
 }
 
-/* line 561, ../sass/main.scss */
+/* line 586, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -653,7 +704,7 @@ a {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 570, ../sass/main.scss */
+/* line 595, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -665,11 +716,11 @@ a {
    ========================================================================== */
 @media only screen and (max-width: 45rem) {
   /* Style adjustments for viewports that meet the condition */
-  /* line 583, ../sass/main.scss */
+  /* line 608, ../sass/main.scss */
   .bar.nav .current {
     display: inline-block;
   }
-  /* line 587, ../sass/main.scss */
+  /* line 612, ../sass/main.scss */
   .bar.nav ul.main-menu {
     position: absolute;
     left: 0.5rem;
@@ -691,11 +742,11 @@ a {
     -o-border-radius: 3px;
     border-radius: 3px;
   }
-  /* line 593, ../sass/main.scss */
+  /* line 618, ../sass/main.scss */
   .bar.nav ul.main-menu .current {
     color: #fff;
   }
-  /* line 597, ../sass/main.scss */
+  /* line 622, ../sass/main.scss */
   .bar.nav ul.main-menu li {
     background-color: #282828;
     display: block;
@@ -710,28 +761,28 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 601, ../sass/main.scss */
+  /* line 626, ../sass/main.scss */
   .bar.nav ul.main-menu li:not(:first-child) {
     margin-left: 0;
   }
-  /* line 603, ../sass/main.scss */
+  /* line 628, ../sass/main.scss */
   .bar.nav ul.main-menu li:not(:first-child) ::before {
     display: none;
   }
-  /* line 608, ../sass/main.scss */
+  /* line 633, ../sass/main.scss */
   .bar.nav ul.main-menu li:first-child {
     padding-left: 1rem;
   }
-  /* line 612, ../sass/main.scss */
+  /* line 637, ../sass/main.scss */
   .bar.nav ul.main-menu li a {
     text-align: left;
   }
-  /* line 616, ../sass/main.scss */
+  /* line 641, ../sass/main.scss */
   .bar.nav ul.main-menu li.on {
     border-top: 1px #3e3e3e solid;
     border-bottom: 0;
   }
-  /* line 619, ../sass/main.scss */
+  /* line 644, ../sass/main.scss */
   .bar.nav ul.main-menu li.on a {
     color: #d3d3d3;
   }
@@ -744,7 +795,7 @@ a {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 641, ../sass/main.scss */
+  /* line 666, ../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -753,18 +804,18 @@ a {
     text-shadow: none !important;
   }
 
-  /* line 649, ../sass/main.scss */
+  /* line 674, ../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 653, ../sass/main.scss */
+  /* line 678, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 657, ../sass/main.scss */
+  /* line 682, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -772,33 +823,33 @@ a {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 667, ../sass/main.scss */
+  /* line 692, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 672, ../sass/main.scss */
+  /* line 697, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 677, ../sass/main.scss */
+  /* line 702, ../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 682, ../sass/main.scss */
+  /* line 707, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 686, ../sass/main.scss */
+  /* line 711, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -807,7 +858,7 @@ a {
     margin: 0.5cm;
 }
 
-  /* line 696, ../sass/main.scss */
+  /* line 721, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -815,7 +866,7 @@ a {
     widows: 3;
   }
 
-  /* line 702, ../sass/main.scss */
+  /* line 727, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;
