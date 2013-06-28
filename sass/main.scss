@@ -468,6 +468,31 @@ a {
     @include bar-bottomshadow;
 }
 
+.level-4 {
+    background-color: #ccc;
+    padding: 0.5rem 1rem;
+    @include bar-toplight(#ddd);
+    @include bar-bottomshadow;
+}
+
+.issue-detail-title {
+    .level-1 {
+        position: fixed;
+        top: 3rem;
+    }
+}
+
+.issue-detail-content {
+    margin-top: 6rem;
+}
+
+.initiative-wrapper {
+    .initiative-title {
+        background-color: #fff;
+        //z-index: 7;
+        @include box-shadow(rgba(black, 0.3) 0 0 5px);
+    }
+}
 
 
 /* ==========================================================================
