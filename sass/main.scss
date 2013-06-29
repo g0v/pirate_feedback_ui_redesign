@@ -190,6 +190,10 @@ a {
 .action { /* wrapper for an icon group */
     float: right;
 
+    a {
+        cursor: pointer;
+    }
+
     .action-icon {
         width: 2rem;
         margin: 0 0.5rem;
@@ -330,11 +334,21 @@ a {
     border-bottom: 1px #000 solid;
     @include box-shadow(rgba(black, 1) 0 0 5px);
 
+    a {
+        color: #d3d3d3;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+        }
+    }
+
     .current {
         display: none;
-        color: #fff;
         padding: 0 1rem;
         min-width: 6rem;
+        cursor: pointer;
     }
 
     ul {
@@ -350,14 +364,7 @@ a {
 
         a {
             display: block;
-            color: #d3d3d3;
             text-align: center;
-
-            &:hover,
-            &:focus,
-            &:active {
-                color: #fff;
-            }
         }
     }
 
@@ -610,14 +617,11 @@ a {
         }
 
         ul.main-menu {
+            display: none;
             @include dropdown-ul;
             @include box-sizing(border-box);
             @include box-shadow(rgba(black, 1) 0 0 5px);
             @include border-radius(3px);
-
-            .current {
-                color: #fff;
-            }
 
             li {
                 @include dropdown-li;
@@ -646,6 +650,49 @@ a {
                     }
                 }
             }
+        }
+    }
+
+    .user-status {
+        .progress-bar {
+            width: auto;
+            //height: $progress-thickness;
+            background: none;
+            //display: inline-block;
+            //line-height: $progress-thickness;
+            border: none;
+        }
+
+        .progress-amount {
+            //display: inline-block;
+            //height: $progress-thickness;
+            //position: relative;
+            //top: -2.5px;
+            &:not(:first-child) {
+                margin-left: 0;
+            }
+
+            &.direct-support,
+            &.indirect-support,
+            &.potential-support {
+                width: auto;
+            }
+        }
+
+        .progress-number {
+            position: relative;
+            //right: 0;
+            //top: -0.3rem;
+            //height: 1rem;
+            //width: auto;
+            //padding: 0 0.2rem;
+            //border: 1px #fff solid;
+            //color: #fff;
+            //font-size: 0.75rem;
+            //line-height: 1rem;
+            //text-align: center;
+            //background-color: #fff;
+            //@include border-radius(3px);
         }
     }
 }

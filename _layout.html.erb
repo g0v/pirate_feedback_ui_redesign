@@ -24,7 +24,7 @@
         <!-- Add your site or application content here -->
 
         <section class="bar nav">
-            <a href="" class="current"><%= @navcurrent %></a>
+            <a class="current" name="show-main-menu"><%= @navcurrent %></a>
             <ul class="main-menu">
                 <li <%= @menuevents %>><a href="events.html">Events</a></li>
                 <li <%= @menuissues %>><a href="index.html">Issues</a></li>
@@ -34,8 +34,8 @@
             <ul class="action">
 <%= @navactions %>
                 <li><a href="" class="action-icon">？</a></li>
-                <li class="profile-menu"><a href="" class="action-icon">me</a>
-                    <ul>
+                <li class="profile-menu"><a class="action-icon">me</a>
+                    <ul class="spinner" style="display:none">
                         <li><a href="">※　Profile</a></li>
                         <li><a href="">※　Settings</a></li>
                         <li><a href="">※　Admin</a></li>

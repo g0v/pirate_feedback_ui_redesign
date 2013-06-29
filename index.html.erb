@@ -8,9 +8,9 @@
   Issues
 <% end %>
 <% @navactions = capture do %>
-                <li><a href="" class="action-icon">＋</a></li>
-                <li><a href="" class="action-icon">～</a></li>
-                <li><a href="" class="action-icon">⊕</a></li>
+                <li><a class="action-icon" name="new-issue">＋</a></li>
+                <li><a class="action-icon" name="issue-filter">～</a></li>
+                <li><a class="action-icon" name="search">⊕</a></li>
 <% end %>
 
 <%= render :partial => "issue-title-discussion" %>

@@ -125,11 +125,15 @@ a {
   float: right;
 }
 /* line 193, ../sass/main.scss */
+.action a {
+  cursor: pointer;
+}
+/* line 197, ../sass/main.scss */
 .action .action-icon {
   width: 2rem;
   margin: 0 0.5rem;
 }
-/* line 198, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 .action .action-delegation {
   text-align: left;
   position: relative;
@@ -145,11 +149,11 @@ a {
   border-left: 1px #cccccc solid;
 }
 
-/* line 206, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .user-status {
   float: right;
 }
-/* line 211, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 .user-status .progress-bar {
   width: 10rem;
   height: 0.5rem;
@@ -159,22 +163,22 @@ a {
   border-top: 1px #999 solid;
   border-bottom: 1px #fff solid;
 }
-/* line 220, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 .user-status .progress-bar.voting {
   height: 0;
 }
-/* line 225, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 .user-status .progress-amount {
   display: inline-block;
   height: 0.5rem;
   position: relative;
   top: -2.5px;
 }
-/* line 230, ../sass/main.scss */
+/* line 234, ../sass/main.scss */
 .user-status .progress-amount:not(:first-child) {
   margin-left: -0.3rem;
 }
-/* line 235, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .user-status .progress-number {
   position: absolute;
   right: 0;
@@ -194,83 +198,83 @@ a {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 251, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .user-status .status {
   width: 2rem;
   margin: 0 0.5rem;
   text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0, white 1px 1px 0;
 }
-/* line 267, ../sass/main.scss */
+/* line 271, ../sass/main.scss */
 .user-status .direct-support.status {
   color: #238443;
 }
-/* line 272, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 .user-status .direct-support.progress-amount {
   background-color: #238443;
 }
-/* line 277, ../sass/main.scss */
+/* line 281, ../sass/main.scss */
 .user-status .direct-support .progress-number {
   background-color: #238443;
 }
-/* line 267, ../sass/main.scss */
+/* line 271, ../sass/main.scss */
 .user-status .indirect-support.status {
   color: #78c679;
 }
-/* line 272, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 .user-status .indirect-support.progress-amount {
   background-color: #78c679;
 }
-/* line 277, ../sass/main.scss */
+/* line 281, ../sass/main.scss */
 .user-status .indirect-support .progress-number {
   background-color: #78c679;
 }
-/* line 267, ../sass/main.scss */
+/* line 271, ../sass/main.scss */
 .user-status .potential-support.status {
   color: #f7fcb9;
 }
-/* line 272, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 .user-status .potential-support.progress-amount {
   background-color: #f7fcb9;
 }
-/* line 277, ../sass/main.scss */
+/* line 281, ../sass/main.scss */
 .user-status .potential-support .progress-number {
   background-color: #f7fcb9;
 }
-/* line 293, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 .user-status .direct-support.progress-amount {
   width: 20%;
 }
-/* line 293, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 .user-status .indirect-support.progress-amount {
   width: 30%;
 }
-/* line 293, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 .user-status .potential-support.progress-amount {
   width: 40%;
 }
 
-/* line 305, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 .meta-text {
   font-size: 0.875rem;
 }
 
-/* line 309, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 .status-text {
   font-size: 0.75rem;
   text-shadow: white 1 1 0;
 }
 
-/* line 314, ../sass/main.scss */
+/* line 318, ../sass/main.scss */
 #content-wrapper {
   margin-top: 3rem;
 }
 
-/* line 318, ../sass/main.scss */
+/* line 322, ../sass/main.scss */
 .bar {
   width: 100%;
 }
 
-/* line 322, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 .nav {
   padding: 0.5rem;
   background-color: #222;
@@ -284,14 +288,22 @@ a {
   -moz-box-shadow: black 0 0 5px;
   box-shadow: black 0 0 5px;
 }
-/* line 333, ../sass/main.scss */
+/* line 337, ../sass/main.scss */
+.nav a {
+  color: #d3d3d3;
+}
+/* line 342, ../sass/main.scss */
+.nav a:hover, .nav a:focus, .nav a:active {
+  color: #fff;
+}
+/* line 347, ../sass/main.scss */
 .nav .current {
   display: none;
-  color: #fff;
   padding: 0 1rem;
   min-width: 6rem;
+  cursor: pointer;
 }
-/* line 340, ../sass/main.scss */
+/* line 354, ../sass/main.scss */
 .nav ul {
   display: inline;
   margin: 0;
@@ -324,27 +336,22 @@ a {
 .nav ul li.last {
   padding-right: 0;
 }
-/* line 345, ../sass/main.scss */
+/* line 359, ../sass/main.scss */
 .nav ul li {
   height: 2rem;
   position: relative;
 }
-/* line 351, ../sass/main.scss */
+/* line 365, ../sass/main.scss */
 .nav ul a {
   display: block;
-  color: #d3d3d3;
   text-align: center;
 }
-/* line 358, ../sass/main.scss */
-.nav ul a:hover, .nav ul a:focus, .nav ul a:active {
-  color: #fff;
-}
-/* line 365, ../sass/main.scss */
+/* line 372, ../sass/main.scss */
 .nav .main-menu li {
   width: 10%;
   min-width: 6rem;
 }
-/* line 369, ../sass/main.scss */
+/* line 376, ../sass/main.scss */
 .nav .main-menu li:not(:first-child) {
   margin-left: 1px;
 }
@@ -357,19 +364,19 @@ a {
   height: 1.5rem;
   border-left: 1px #424242 solid;
 }
-/* line 374, ../sass/main.scss */
+/* line 381, ../sass/main.scss */
 .nav .main-menu li.on {
   border-bottom: 0.5rem #33B5E5 solid;
 }
-/* line 376, ../sass/main.scss */
+/* line 383, ../sass/main.scss */
 .nav .main-menu li.on a {
   color: #fff;
 }
-/* line 384, ../sass/main.scss */
+/* line 391, ../sass/main.scss */
 .nav .action li {
   width: 3rem;
 }
-/* line 387, ../sass/main.scss */
+/* line 394, ../sass/main.scss */
 .nav .action li.profile-menu {
   margin-left: 1rem;
 }
@@ -382,7 +389,7 @@ a {
   height: 1.5rem;
   border-left: 1px #424242 solid;
 }
-/* line 391, ../sass/main.scss */
+/* line 398, ../sass/main.scss */
 .nav .action li.profile-menu ul {
   position: absolute;
   left: auto;
@@ -404,7 +411,7 @@ a {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 397, ../sass/main.scss */
+/* line 404, ../sass/main.scss */
 .nav .action li.profile-menu ul li {
   background-color: #282828;
   display: block;
@@ -419,16 +426,16 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 401, ../sass/main.scss */
+/* line 408, ../sass/main.scss */
 .nav .action li.profile-menu ul li a {
   text-align: left;
 }
-/* line 410, ../sass/main.scss */
+/* line 417, ../sass/main.scss */
 .nav .highlight {
   border-bottom: 6px #33B5E5;
 }
 
-/* line 417, ../sass/main.scss */
+/* line 424, ../sass/main.scss */
 .level-1 {
   background-color: #fff;
   padding: 0 0.5rem;
@@ -450,7 +457,7 @@ a {
   width: 100%;
   border-bottom: 1px #cccccc solid;
 }
-/* line 424, ../sass/main.scss */
+/* line 431, ../sass/main.scss */
 .level-1 .phase {
   height: 3rem;
   padding: 0.5rem;
@@ -465,32 +472,32 @@ a {
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
 }
-/* line 434, ../sass/main.scss */
+/* line 441, ../sass/main.scss */
 .level-1 .phase.admission {
   background-color: #6BAED6;
 }
-/* line 437, ../sass/main.scss */
+/* line 444, ../sass/main.scss */
 .level-1 .phase.discussion {
   background-color: #4292C6;
 }
-/* line 440, ../sass/main.scss */
+/* line 447, ../sass/main.scss */
 .level-1 .phase.verification {
   background-color: #2171B5;
 }
-/* line 443, ../sass/main.scss */
+/* line 450, ../sass/main.scss */
 .level-1 .phase.voting {
   background-color: #08519C;
 }
-/* line 448, ../sass/main.scss */
+/* line 455, ../sass/main.scss */
 .level-1 .time-left {
   color: #999;
 }
-/* line 452, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 .level-1 .action {
   margin-top: 0.5rem;
 }
 
-/* line 457, ../sass/main.scss */
+/* line 464, ../sass/main.scss */
 .level-2 {
   background-color: #eee;
   padding: 0.5rem 1rem;
@@ -522,7 +529,7 @@ a {
   border-bottom: 1px #cccccc solid;
 }
 
-/* line 464, ../sass/main.scss */
+/* line 471, ../sass/main.scss */
 .level-3 {
   background-color: #ddd;
   padding: 0.5rem 1rem;
@@ -554,7 +561,7 @@ a {
   border-bottom: 1px #cccccc solid;
 }
 
-/* line 471, ../sass/main.scss */
+/* line 478, ../sass/main.scss */
 .level-4 {
   background-color: #ccc;
   padding: 0.5rem 1rem;
@@ -586,18 +593,18 @@ a {
   border-bottom: 1px #cccccc solid;
 }
 
-/* line 479, ../sass/main.scss */
+/* line 486, ../sass/main.scss */
 .issue-detail-title .level-1 {
   position: fixed;
   top: 3rem;
 }
 
-/* line 485, ../sass/main.scss */
+/* line 492, ../sass/main.scss */
 .issue-detail-content {
   margin-top: 6rem;
 }
 
-/* line 490, ../sass/main.scss */
+/* line 497, ../sass/main.scss */
 .initiative-wrapper .initiative-title {
   background-color: #fff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
@@ -611,7 +618,7 @@ a {
 /*
  * Image replacement
  */
-/* line 506, ../sass/main.scss */
+/* line 513, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -620,7 +627,7 @@ a {
   *text-indent: -9999px;
 }
 
-/* line 514, ../sass/main.scss */
+/* line 521, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -631,7 +638,7 @@ a {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 525, ../sass/main.scss */
+/* line 532, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -640,7 +647,7 @@ a {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 534, ../sass/main.scss */
+/* line 541, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -656,7 +663,7 @@ a {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 551, ../sass/main.scss */
+/* line 558, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -670,7 +677,7 @@ a {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 564, ../sass/main.scss */
+/* line 571, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -686,7 +693,7 @@ a {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 581, ../sass/main.scss */
+/* line 588, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -695,7 +702,7 @@ a {
   /* 2 */
 }
 
-/* line 586, ../sass/main.scss */
+/* line 593, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -704,7 +711,7 @@ a {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 595, ../sass/main.scss */
+/* line 602, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -716,12 +723,13 @@ a {
    ========================================================================== */
 @media only screen and (max-width: 45rem) {
   /* Style adjustments for viewports that meet the condition */
-  /* line 608, ../sass/main.scss */
+  /* line 615, ../sass/main.scss */
   .bar.nav .current {
     display: inline-block;
   }
-  /* line 612, ../sass/main.scss */
+  /* line 619, ../sass/main.scss */
   .bar.nav ul.main-menu {
+    display: none;
     position: absolute;
     left: 0.5rem;
     right: auto;
@@ -742,11 +750,7 @@ a {
     -o-border-radius: 3px;
     border-radius: 3px;
   }
-  /* line 618, ../sass/main.scss */
-  .bar.nav ul.main-menu .current {
-    color: #fff;
-  }
-  /* line 622, ../sass/main.scss */
+  /* line 626, ../sass/main.scss */
   .bar.nav ul.main-menu li {
     background-color: #282828;
     display: block;
@@ -761,30 +765,49 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 626, ../sass/main.scss */
+  /* line 630, ../sass/main.scss */
   .bar.nav ul.main-menu li:not(:first-child) {
     margin-left: 0;
   }
-  /* line 628, ../sass/main.scss */
+  /* line 632, ../sass/main.scss */
   .bar.nav ul.main-menu li:not(:first-child) ::before {
     display: none;
   }
-  /* line 633, ../sass/main.scss */
+  /* line 637, ../sass/main.scss */
   .bar.nav ul.main-menu li:first-child {
     padding-left: 1rem;
   }
-  /* line 637, ../sass/main.scss */
+  /* line 641, ../sass/main.scss */
   .bar.nav ul.main-menu li a {
     text-align: left;
   }
-  /* line 641, ../sass/main.scss */
+  /* line 645, ../sass/main.scss */
   .bar.nav ul.main-menu li.on {
     border-top: 1px #3e3e3e solid;
     border-bottom: 0;
   }
-  /* line 644, ../sass/main.scss */
+  /* line 648, ../sass/main.scss */
   .bar.nav ul.main-menu li.on a {
     color: #d3d3d3;
+  }
+
+  /* line 657, ../sass/main.scss */
+  .user-status .progress-bar {
+    width: auto;
+    background: none;
+    border: none;
+  }
+  /* line 671, ../sass/main.scss */
+  .user-status .progress-amount:not(:first-child) {
+    margin-left: 0;
+  }
+  /* line 677, ../sass/main.scss */
+  .user-status .progress-amount.direct-support, .user-status .progress-amount.indirect-support, .user-status .progress-amount.potential-support {
+    width: auto;
+  }
+  /* line 682, ../sass/main.scss */
+  .user-status .progress-number {
+    position: relative;
   }
 }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
@@ -795,7 +818,7 @@ a {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 666, ../sass/main.scss */
+  /* line 713, ../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -804,18 +827,18 @@ a {
     text-shadow: none !important;
   }
 
-  /* line 674, ../sass/main.scss */
+  /* line 721, ../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 678, ../sass/main.scss */
+  /* line 725, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 682, ../sass/main.scss */
+  /* line 729, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -823,33 +846,33 @@ a {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 692, ../sass/main.scss */
+  /* line 739, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 697, ../sass/main.scss */
+  /* line 744, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 702, ../sass/main.scss */
+  /* line 749, ../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 707, ../sass/main.scss */
+  /* line 754, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 711, ../sass/main.scss */
+  /* line 758, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -858,7 +881,7 @@ a {
     margin: 0.5cm;
 }
 
-  /* line 721, ../sass/main.scss */
+  /* line 768, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -866,7 +889,7 @@ a {
     widows: 3;
   }
 
-  /* line 727, ../sass/main.scss */
+  /* line 774, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;
