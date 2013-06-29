@@ -25,28 +25,28 @@
         <!-- Add your site or application content here -->
 
         <section class="bar nav">
-            <a href="" class="current">  Units
+            <a class="current" name="show-main-menu">  Units
 </a>
-            <ul class="main-menu">
+            <ul class="main-menu-spinner">
                 <li ><a href="events.html">Events</a></li>
                 <li ><a href="index.html">Issues</a></li>
                 <li   class="on"
 ><a href="units.html">Units</a></li>
                 <li ><a href="members.html">Members</a></li>
             </ul>
-            <ul class="action">
-                <li><a href="" class="action-icon">⊕</a></li>
-                <li><a href="" class="action-icon">？</a></li>
-                <li class="profile-menu"><a href="" class="action-icon">me</a>
-                    <ul>
+            <span class="action">
+                <a class="action-icon" name="search">⊕</a>
+                <a class="action-icon" name="show-hint">？</a></li>
+                <span class="profile-menu"><a class="action-icon" name="show-profile-menu">me</a>
+                    <ul class="profile-menu-spinner" style="display:none">
                         <li><a href="">※　Profile</a></li>
                         <li><a href="">※　Settings</a></li>
                         <li><a href="">※　Admin</a></li>
                         <li><a href="">※　Logout</a></li>
                         <li><a href="">※　About</a></li>
                     </ul>
-                </li>
-            </ul>
+                </span>
+            </span>
         </section>
 
         <section id="content-wrapper">
@@ -116,12 +116,12 @@
             </footer>
         </section>
 
-        <!-- javascript
+        <!-- javascript-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        -->
+        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>

@@ -25,28 +25,31 @@
         <!-- Add your site or application content here -->
 
         <section class="bar nav">
-            <a href="" class="current">  Issues
+            <a class="current" name="show-main-menu">  Issues
 </a>
-            <ul class="main-menu">
+            <ul class="main-menu-spinner">
                 <li ><a href="events.html">Events</a></li>
                 <li   class="on"
 ><a href="index.html">Issues</a></li>
                 <li ><a href="units.html">Units</a></li>
                 <li ><a href="members.html">Members</a></li>
             </ul>
-            <ul class="action">
-                <li><a href="" class="action-icon">⊕</a></li>
-                <li><a href="" class="action-icon">？</a></li>
-                <li class="profile-menu"><a href="" class="action-icon">me</a>
-                    <ul>
+            <span class="action">
+                <a class="action-icon" name="show-pad">□</a>
+                <a class="action-icon" name="collapse-all-initiatives">↑</a>
+                <a class="action-icon" name="expand-all-initiatives">↓</a>
+                <a class="action-icon" name="search">⊕</a>
+                <a class="action-icon" name="show-hint">？</a></li>
+                <span class="profile-menu"><a class="action-icon" name="show-profile-menu">me</a>
+                    <ul class="profile-menu-spinner" style="display:none">
                         <li><a href="">※　Profile</a></li>
                         <li><a href="">※　Settings</a></li>
                         <li><a href="">※　Admin</a></li>
                         <li><a href="">※　Logout</a></li>
                         <li><a href="">※　About</a></li>
                     </ul>
-                </li>
-            </ul>
+                </span>
+            </span>
         </section>
 
         <section id="content-wrapper">
@@ -56,9 +59,9 @@
                 <span class="phase discussion">Discussion</span>
                 <span class="time-left meta-text">1 day 3 hrs left</span>
                 <span class="action">
-                    <a href="" class="action-icon">＋</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-delegation">● > ●-●-</a>
+                    <a class="action-icon new-initiaitve">＋</a>
+                    <a class="action-icon add-interest">☆</a>
+                    <a class="action-delegation">● > ●-●-</a>
                 </span>
             </header>
             </div>
@@ -79,9 +82,9 @@
 
             <div class="initiative-wrapper">
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -91,39 +94,40 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Quo ut deserunt placeat saepe cum
                 </span>
             </article>
 
+            <aside class="bar level-2 initiative-members" style="display:none">
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+            </aside>
             <aside class="bar level-2 initiative-meta">
                 <span class="action">
-                    <a href="" class="action-icon new"  name="support-initiative">☆</a>
-                    <a href="" class="action-icon new"  name="subscribe-initiative">☆</a>
-                    <a href="" class="action-icon collapse" name="collapse-initiative" style="display:none">↑</a>
-                    <a href="" class="action-icon expand" name="expand-initiative">↓</a>
+                    <a class="action-icon"  name="support-initiative">☆</a>
+                    <a class="action-icon"  name="subscribe-initiative">☆</a>
+                    <a class="action-icon" name="collapse-initiative">↑</a>
+                    <a class="action-icon" name="expand-initiative">↓</a>
                 </span>
             	<span class="meta-text">
             		<span>Yesterday 17:32 ● clkao</span>
             	</span>
             </aside>
-            <aside class="bar level-2 initiative-members" style="display:none">
-                <span class="member">
-                	<span>●</span>
-                    <span class="status">♂</span>
-                </span>
-                <span class="member">
-                	<span>●</span>
-                    <span class="status">♂</span>
-                </span>
-                <span class="member">
-                	<span>●</span>
-                    <span class="status">♂</span>
-                </span>
-            </aside>
-            <article class="bar level-2 initiative-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+            <article class="bar level-2 initiative-content">
+                <span>Dolores sapiente vel minus assumenda suscipit voluptates et cupiditate adipisci. veritatis quasi voluptatum ab corrupti. commodi aut voluptas officiis velit ea sapiente. veritatis libero inventore fuga porro quaerat officiis nisi. sapiente aut id debitis ratione incidunt et veniam reiciendis fugit
                 </span>
             </article>
+                <div class="suggestion-wrapper">
             <aside class="bar level-2 initiative-suggestion">
                 <span class="action">
                     <a href="" class="action-icon new"  name="new-suggestion">＋</a>
@@ -133,9 +137,9 @@
             	<span>Suggestions (2)</span>
             </aside>
             <header class="bar level-3 suggestion-title">
-                <span class="user-status">
+                <span class="user-status  action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar" name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -143,7 +147,7 @@
                         <span class="progress-amount potential-support"></span>
                     </a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar"name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -152,7 +156,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Architecto unde rerum hic sapiente sit quis quos aut qui corporis sunt</span>
             </header>
             <aside class="bar level-3 suggestion-members" style="display:none">
                 <span class="member">
@@ -170,25 +174,25 @@
             </aside>
             <aside class="bar level-3 suggestion-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 suggestion-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Est commodi saepe iure. quasi ipsam rem dolore molestiae quia dolorem aut voluptatem. esse labore harum excepturi inventore fugiat est quae qui officiis sapiente. et beatae voluptatibus nam iure dolor distinctio quia labore excepturi rerum blanditiis
                 </span>
             </article>
             <header class="bar level-3 suggestion-title">
-                <span class="user-status">
+                <span class="user-status  action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar" name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -196,7 +200,7 @@
                         <span class="progress-amount potential-support"></span>
                     </a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar"name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -205,7 +209,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Ab blanditiis asperiores labore voluptas dolores</span>
             </header>
             <aside class="bar level-3 suggestion-members" style="display:none">
                 <span class="member">
@@ -223,39 +227,41 @@
             </aside>
             <aside class="bar level-3 suggestion-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 suggestion-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Sit et odit quis incidunt qui dolorem mollitia nesciunt. neque quas repudiandae ea enim praesentium error. aut quia veniam consequatur non quaerat. quaerat autem sapiente molestias accusamus suscipit aut odio magnam numquam doloribus aut inventore rerum explicabo. non aperiam vitae a
                 </span>
             </article>
+                </div>
+                <div class="argument-pro-wrapper">
             <aside class="bar level-2 initiative-argument">
                 <span class="action">
-                    <a href="" class="action-icon new"  name="new-arguments-pro">＋</a>
-                    <a href="" class="action-icon collapse" name="collapse-arguments-pro" style="display:none">↑</a>
-                    <a href="" class="action-icon expand" name="expand-arguments-pro">↓</a>
+                    <a class="action-icon"  name="new-argument-pro">＋</a>
+                    <a class="action-icon" name="collapse-argument-pro" style="display:none">↑</a>
+                    <a class="action-icon" name="expand-argument-pro">↓</a>
                 </span>
             	<span>Argument Pros (2)</span>
             </aside>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Excepturi nesciunt voluptas sint totam sed beatae sequi libero similique repudiandae</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -273,27 +279,27 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Corporis ut ut deserunt tempora qui harum. et ut ipsam non exercitationem nesciunt aspernatur tempora voluptate accusamus et. illum officiis quis exercitationem cupiditate similique atque qui incidunt delectus tenetur
                 </span>
             </article>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Deserunt et necessitatibus quis quae dolore dolores expedita illo</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -311,35 +317,37 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Maxime omnis quo vitae aut unde. excepturi est possimus dolorem quibusdam atque repudiandae unde voluptatem inventore. consequatur qui ipsum molestiae quia necessitatibus et deleniti omnis. in omnis aut veritatis omnis aliquam occaecati et quo reprehenderit facilis eligendi voluptas exercitationem consequatur. porro unde recusandae ducimus natus voluptas sequi culpa consequatur in ut eligendi odio maiores laboriosam. delectus at ipsam cum tempora ut ut minus
                 </span>
             </article>
+                </div>
+                <div class="argument-cons-wrapper">
             <aside class="bar level-2 initiative-argument">
                 <span class="action">
-                    <a href="" class="action-icon new"  name="new-arguments-cons">＋</a>
-                    <a href="" class="action-icon collapse" name="collapse-arguments-cons" style="display:none">↑</a>
-                    <a href="" class="action-icon expand" name="expand-arguments-cons">↓</a>
+                    <a class="action-icon"  name="new-argument-cons">＋</a>
+                    <a class="action-icon" name="collapse-argument-cons" style="display:none">↑</a>
+                    <a class="action-icon" name="expand-argument-cons">↓</a>
                 </span>
             	<span>Argument Cons (2)</span>
             </aside>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Eligendi reiciendis amet inventore odit vitae facilis rerum eligendi</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -357,27 +365,27 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Fugiat deleniti et enim. quia at neque nulla consequatur quo id dolor quia dolorem explicabo. itaque dignissimos reprehenderit dolorum alias molestiae quia incidunt. sit et fuga enim natus in atque exercitationem soluta autem velit impedit nostrum dolores dolores. eum minima ab omnis ad ad consequatur
                 </span>
             </article>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Maxime et occaecati beatae rerum voluptas ad accusamus rerum officiis assumenda tempora et</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -395,24 +403,25 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Eum facere sit quia est. quaerat ab quisquam saepe dolor distinctio velit ut sit soluta. deleniti rerum deserunt sit nesciunt et cumque modi quia eum voluptatem est. itaque cum et eum illum sit. odit at sunt exercitationem optio cumque dolorem ut quasi ut
                 </span>
             </article>
+                </div>
             </div>
 
             <div class="initiative-wrapper">
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -422,39 +431,40 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Vero ut officiis eveniet explicabo qui tempore et esse dolore sit voluptatum temporibus cupiditate est
                 </span>
             </article>
 
+            <aside class="bar level-2 initiative-members" style="display:none">
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+            </aside>
             <aside class="bar level-2 initiative-meta">
                 <span class="action">
-                    <a href="" class="action-icon new"  name="support-initiative">☆</a>
-                    <a href="" class="action-icon new"  name="subscribe-initiative">☆</a>
-                    <a href="" class="action-icon collapse" name="collapse-initiative" style="display:none">↑</a>
-                    <a href="" class="action-icon expand" name="expand-initiative">↓</a>
+                    <a class="action-icon"  name="support-initiative">☆</a>
+                    <a class="action-icon"  name="subscribe-initiative">☆</a>
+                    <a class="action-icon" name="collapse-initiative">↑</a>
+                    <a class="action-icon" name="expand-initiative">↓</a>
                 </span>
             	<span class="meta-text">
             		<span>Yesterday 17:32 ● clkao</span>
             	</span>
             </aside>
-            <aside class="bar level-2 initiative-members" style="display:none">
-                <span class="member">
-                	<span>●</span>
-                    <span class="status">♂</span>
-                </span>
-                <span class="member">
-                	<span>●</span>
-                    <span class="status">♂</span>
-                </span>
-                <span class="member">
-                	<span>●</span>
-                    <span class="status">♂</span>
-                </span>
-            </aside>
-            <article class="bar level-2 initiative-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+            <article class="bar level-2 initiative-content">
+                <span>Ducimus nulla voluptate aut. aperiam in fugiat maxime itaque iste qui id pariatur recusandae. aut veritatis dignissimos repellendus quas eaque iure voluptas sit consequatur accusantium qui neque
                 </span>
             </article>
+                <div class="suggestion-wrapper">
             <aside class="bar level-2 initiative-suggestion">
                 <span class="action">
                     <a href="" class="action-icon new"  name="new-suggestion">＋</a>
@@ -464,9 +474,9 @@
             	<span>Suggestions (2)</span>
             </aside>
             <header class="bar level-3 suggestion-title">
-                <span class="user-status">
+                <span class="user-status  action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar" name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -474,7 +484,7 @@
                         <span class="progress-amount potential-support"></span>
                     </a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar"name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -483,7 +493,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Ad eum molestias temporibus eos ipsa in quas sint excepturi libero</span>
             </header>
             <aside class="bar level-3 suggestion-members" style="display:none">
                 <span class="member">
@@ -501,25 +511,25 @@
             </aside>
             <aside class="bar level-3 suggestion-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 suggestion-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Tempora atque fugiat est cupiditate velit culpa dolore non id blanditiis sed. deleniti sit et consectetur numquam non ad. ullam sapiente quo et exercitationem eius voluptatem quia odit. earum optio sed quibusdam impedit omnis enim rerum quisquam quasi nam ducimus et
                 </span>
             </article>
             <header class="bar level-3 suggestion-title">
-                <span class="user-status">
+                <span class="user-status  action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar" name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -527,7 +537,7 @@
                         <span class="progress-amount potential-support"></span>
                     </a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar"name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -536,7 +546,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Totam consectetur autem ab eum corrupti corrupti excepturi consequuntur reiciendis tenetur in similique ut</span>
             </header>
             <aside class="bar level-3 suggestion-members" style="display:none">
                 <span class="member">
@@ -554,39 +564,41 @@
             </aside>
             <aside class="bar level-3 suggestion-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 suggestion-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Dignissimos voluptatem doloremque voluptatem ad ab est. sunt itaque occaecati non dolores voluptates. cum est blanditiis natus. eveniet voluptatem sint sunt doloribus distinctio illum veritatis deleniti laudantium voluptas tempore est iusto. vel sit recusandae error est blanditiis qui porro corrupti officia sint laudantium sunt sed quia
                 </span>
             </article>
+                </div>
+                <div class="argument-pro-wrapper">
             <aside class="bar level-2 initiative-argument">
                 <span class="action">
-                    <a href="" class="action-icon new"  name="new-arguments-pro">＋</a>
-                    <a href="" class="action-icon collapse" name="collapse-arguments-pro" style="display:none">↑</a>
-                    <a href="" class="action-icon expand" name="expand-arguments-pro">↓</a>
+                    <a class="action-icon"  name="new-argument-pro">＋</a>
+                    <a class="action-icon" name="collapse-argument-pro" style="display:none">↑</a>
+                    <a class="action-icon" name="expand-argument-pro">↓</a>
                 </span>
             	<span>Argument Pros (2)</span>
             </aside>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Adipisci vel fuga aut fuga laboriosam recusandae reprehenderit aut ea est voluptate consequuntur porro</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -604,27 +616,27 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Autem commodi aut nobis aut ut at illo enim maiores molestiae voluptatem a. harum aut et dolor odio dolorem tenetur quo ullam recusandae dolorum provident accusamus. cupiditate similique quidem et nostrum aut aut et sit voluptas molestiae saepe
                 </span>
             </article>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Rerum non voluptas magnam veritatis sunt odio beatae non impedit eligendi velit</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -642,35 +654,37 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Ratione explicabo itaque enim quae fugit soluta nam non qui aut sit inventore fuga est. harum voluptate velit doloribus aut est dolores ut molestiae dicta. debitis omnis a quisquam tempore iure omnis quia ex. dolorum ex tenetur corrupti aperiam pariatur nihil enim. error nihil accusantium iusto qui ut temporibus velit vero eum rerum est. nisi aut enim voluptas aperiam non eius excepturi nihil enim unde. corporis rem excepturi cupiditate aut autem autem in repellat facere totam
                 </span>
             </article>
+                </div>
+                <div class="argument-cons-wrapper">
             <aside class="bar level-2 initiative-argument">
                 <span class="action">
-                    <a href="" class="action-icon new"  name="new-arguments-cons">＋</a>
-                    <a href="" class="action-icon collapse" name="collapse-arguments-cons" style="display:none">↑</a>
-                    <a href="" class="action-icon expand" name="expand-arguments-cons">↓</a>
+                    <a class="action-icon"  name="new-argument-cons">＋</a>
+                    <a class="action-icon" name="collapse-argument-cons" style="display:none">↑</a>
+                    <a class="action-icon" name="expand-argument-cons">↓</a>
                 </span>
             	<span>Argument Cons (2)</span>
             </aside>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Ut cum eos sint repellendus ipsa nam deleniti omnis</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -688,27 +702,27 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Quos et ea sed libero quis placeat asperiores voluptas ipsum quo aspernatur. et sunt sequi fuga doloribus ratione. excepturi rerum optio consequatur laboriosam quae culpa quia optio reprehenderit qui modi. rerum maiores odit dolorem
                 </span>
             </article>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Qui nemo soluta veritatis est molestiae impedit aut deleniti vero recusandae aut</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -726,24 +740,25 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Velit deleniti voluptatum eligendi tempora odit omnis non dolores consequatur dolor sapiente deleniti atque nulla. at ad recusandae qui iste placeat qui inventore non sunt pariatur. beatae consectetur excepturi accusantium saepe sit distinctio
                 </span>
             </article>
+                </div>
             </div>
 
             <div class="initiative-wrapper">
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -753,39 +768,40 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Et unde a consectetur ut quam ut neque voluptatem ipsum tempora dolore qui
                 </span>
             </article>
 
+            <aside class="bar level-2 initiative-members" style="display:none">
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+            </aside>
             <aside class="bar level-2 initiative-meta">
                 <span class="action">
-                    <a href="" class="action-icon new"  name="support-initiative">☆</a>
-                    <a href="" class="action-icon new"  name="subscribe-initiative">☆</a>
-                    <a href="" class="action-icon collapse" name="collapse-initiative" style="display:none">↑</a>
-                    <a href="" class="action-icon expand" name="expand-initiative">↓</a>
+                    <a class="action-icon"  name="support-initiative">☆</a>
+                    <a class="action-icon"  name="subscribe-initiative">☆</a>
+                    <a class="action-icon" name="collapse-initiative">↑</a>
+                    <a class="action-icon" name="expand-initiative">↓</a>
                 </span>
             	<span class="meta-text">
             		<span>Yesterday 17:32 ● clkao</span>
             	</span>
             </aside>
-            <aside class="bar level-2 initiative-members" style="display:none">
-                <span class="member">
-                	<span>●</span>
-                    <span class="status">♂</span>
-                </span>
-                <span class="member">
-                	<span>●</span>
-                    <span class="status">♂</span>
-                </span>
-                <span class="member">
-                	<span>●</span>
-                    <span class="status">♂</span>
-                </span>
-            </aside>
-            <article class="bar level-2 initiative-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+            <article class="bar level-2 initiative-content">
+                <span>Aut voluptatem qui incidunt repellendus dolorem nesciunt et. ipsam quam officiis ipsum aliquam id error sunt ut numquam qui aliquid dignissimos. error ab et eum dolorem ab officia explicabo necessitatibus sit sapiente qui rerum molestiae dolorem. repellat et quis saepe velit enim aliquam similique id cum a
                 </span>
             </article>
+                <div class="suggestion-wrapper">
             <aside class="bar level-2 initiative-suggestion">
                 <span class="action">
                     <a href="" class="action-icon new"  name="new-suggestion">＋</a>
@@ -795,9 +811,9 @@
             	<span>Suggestions (2)</span>
             </aside>
             <header class="bar level-3 suggestion-title">
-                <span class="user-status">
+                <span class="user-status  action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar" name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -805,7 +821,7 @@
                         <span class="progress-amount potential-support"></span>
                     </a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar"name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -814,7 +830,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Sit quia sed sunt natus eum mollitia reiciendis provident nostrum error</span>
             </header>
             <aside class="bar level-3 suggestion-members" style="display:none">
                 <span class="member">
@@ -832,25 +848,25 @@
             </aside>
             <aside class="bar level-3 suggestion-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 suggestion-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Maxime aut labore qui rerum eum sed aut accusamus harum et aperiam in. distinctio nihil dolore laborum sit perspiciatis consequatur. non voluptatem perspiciatis quas quis soluta veniam quis labore modi voluptatem consequatur. molestias nam quod nesciunt minima autem odio tempora similique ut ipsum sapiente. deserunt qui quam tempore ullam non et voluptate repudiandae laboriosam commodi dolor. magni voluptas alias ullam quam
                 </span>
             </article>
             <header class="bar level-3 suggestion-title">
-                <span class="user-status">
+                <span class="user-status  action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar" name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -858,7 +874,7 @@
                         <span class="progress-amount potential-support"></span>
                     </a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="progress-bar">
+                    <a class="progress-bar"name="show-suggestion-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -867,7 +883,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Est reiciendis reprehenderit repellat quis veniam cum maxime nihil</span>
             </header>
             <aside class="bar level-3 suggestion-members" style="display:none">
                 <span class="member">
@@ -885,39 +901,41 @@
             </aside>
             <aside class="bar level-3 suggestion-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 suggestion-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Sed facere asperiores velit officia odio laboriosam enim tempora architecto quia ipsa aperiam. ipsam est voluptatem aut dolorem possimus ratione. voluptatem itaque sit ratione dignissimos reprehenderit assumenda cupiditate rerum reiciendis mollitia. facilis sapiente voluptatem dignissimos distinctio quos distinctio repellat. rerum dolor qui vel laborum qui et delectus a natus est harum rerum ipsa. earum molestiae libero error laboriosam saepe omnis similique voluptates doloribus et incidunt temporibus commodi veniam
                 </span>
             </article>
+                </div>
+                <div class="argument-pro-wrapper">
             <aside class="bar level-2 initiative-argument">
                 <span class="action">
-                    <a href="" class="action-icon new"  name="new-arguments-pro">＋</a>
-                    <a href="" class="action-icon collapse" name="collapse-arguments-pro" style="display:none">↑</a>
-                    <a href="" class="action-icon expand" name="expand-arguments-pro">↓</a>
+                    <a class="action-icon"  name="new-argument-pro">＋</a>
+                    <a class="action-icon" name="collapse-argument-pro" style="display:none">↑</a>
+                    <a class="action-icon" name="expand-argument-pro">↓</a>
                 </span>
             	<span>Argument Pros (2)</span>
             </aside>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Quaerat delectus veritatis cupiditate porro et reiciendis distinctio culpa</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -935,27 +953,27 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Quidem eum iusto nostrum labore maxime voluptate et fugiat commodi ea libero. aut et et aut. vel consequatur molestiae est enim asperiores omnis consectetur iure non. eum quia similique consequatur nam. aut voluptas cupiditate officia. quis esse excepturi inventore nemo
                 </span>
             </article>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Minus eaque vel in illo qui</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -973,35 +991,37 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Eligendi vitae similique tempore. dolor deserunt fugiat inventore dolores quos architecto maiores eveniet repellat saepe esse. enim qui assumenda excepturi voluptatum cum non sed ullam eos alias temporibus
                 </span>
             </article>
+                </div>
+                <div class="argument-cons-wrapper">
             <aside class="bar level-2 initiative-argument">
                 <span class="action">
-                    <a href="" class="action-icon new"  name="new-arguments-cons">＋</a>
-                    <a href="" class="action-icon collapse" name="collapse-arguments-cons" style="display:none">↑</a>
-                    <a href="" class="action-icon expand" name="expand-arguments-cons">↓</a>
+                    <a class="action-icon"  name="new-argument-cons">＋</a>
+                    <a class="action-icon" name="collapse-argument-cons" style="display:none">↑</a>
+                    <a class="action-icon" name="expand-argument-cons">↓</a>
                 </span>
             	<span>Argument Cons (2)</span>
             </aside>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Aliquam ea velit sed itaque autem labore quidem</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -1019,27 +1039,27 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Voluptatem nihil laudantium distinctio placeat et quia dolorem cum quasi sapiente quia. deleniti impedit et mollitia possimus velit debitis laborum dolor voluptatem itaque commodi dolores. deserunt illum minima aut quod provident iste quo minus. enim placeat cumque autem tempora molestias nihil totam sunt deserunt quo quia ut
                 </span>
             </article>
             <header class="bar level-3 argument-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">+25</a>
+                    <a class="" name="show-argument-members">+25</a>
                     <span class="status direct-support">♀</span>
-                    <a href="" class="">-25</a>
-                    <a href="" class="">= 0</span>
+                    <a class="" name="show-argument-members">-25</a>
+                    <a class="">= 0</span>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.</span>
+                <span>Rem at ad voluptatem aut rem</span>
             </header>
             <aside class="bar level-3 argument-members" style="display:none">
                 <span class="member">
@@ -1057,17 +1077,18 @@
             </aside>
             <aside class="bar level-3 argument-meta" style="display:none">
                 <span class="action">
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
                 </span>
                 <span class="meta-text">
                     <span>Yesterday 17:32 ● clkao</span>
                 </span>
             </aside>
             <article class="bar level-3 argument-content" style="display:none">
-                <span>Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate. Hello world! This is HTML5 Boilerplate.
+                <span>Quia incidunt rerum soluta vel incidunt suscipit facilis voluptatibus repellat in laborum unde asperiores aut. blanditiis officiis qui quaerat labore provident. velit iste repellat quos commodi dolores est sint. nihil veniam sunt dolorem animi. voluptas voluptatem rerum eaque totam neque incidunt non commodi. nisi labore ullam eveniet assumenda ipsa modi sint ipsam et voluptas aut vel fugit
                 </span>
             </article>
+                </div>
             </div>
 
             <footer class="bar level-1 meta-text">
@@ -1076,12 +1097,12 @@
             </footer>
             </div>        </section>
 
-        <!-- javascript
+        <!-- javascript-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        -->
+        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>

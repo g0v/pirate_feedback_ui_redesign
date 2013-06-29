@@ -129,6 +129,10 @@ textarea {
 }
 
 @mixin action-seperator($color: #ccc, $left: -1rem, $top: 0) {
+    & {
+        position: relative;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -189,6 +193,10 @@ a {
 
 .action { /* wrapper for an icon group */
     float: right;
+
+    a {
+        cursor: pointer;
+    }
 
     .action-icon {
         width: 2rem;
@@ -330,11 +338,21 @@ a {
     border-bottom: 1px #000 solid;
     @include box-shadow(rgba(black, 1) 0 0 5px);
 
+    a {
+        color: #d3d3d3;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+        }
+    }
+
     .current {
         display: none;
-        color: #fff;
         padding: 0 1rem;
         min-width: 6rem;
+        cursor: pointer;
     }
 
     ul {
@@ -343,25 +361,15 @@ a {
         overflow: visible;
 
         li {
-            height: 2rem;
-            position: relative;
-
         }
 
         a {
             display: block;
-            color: #d3d3d3;
             text-align: center;
-
-            &:hover,
-            &:focus,
-            &:active {
-                color: #fff;
-            }
         }
     }
 
-    .main-menu {
+    .main-menu-spinner {
         li {
             width: 10%;
             min-width: 6rem;
@@ -381,26 +389,28 @@ a {
     }
 
     .action {
-        li {
-            width: 3rem;
+        a.action-icon {
+            margin: 0 0.5rem;
+        }
 
-            &.profile-menu {
-                margin-left: 1rem;
-                @include action-seperator(#424242, -0.5rem, 0.25rem);
+        .profile-menu {
+            display: inline-block;
+            line-height: 2rem;
+            margin-left: 1rem;
+            @include action-seperator(#424242, -0.5rem, 0.25rem);
 
-                ul {
-                    @include dropdown-ul(auto, 0, 2.5rem);
+            ul {
+                @include dropdown-ul(auto, 0, 2.5rem);
+                @include box-sizing(border-box);
+                @include box-shadow(rgba(black, 1) 0 0 5px);
+                @include border-radius(3px);
+
+                li {
+                    @include dropdown-li;
                     @include box-sizing(border-box);
-                    @include box-shadow(rgba(black, 1) 0 0 5px);
-                    @include border-radius(3px);
 
-                    li {
-                        @include dropdown-li;
-                        @include box-sizing(border-box);
-
-                        a {
-                            text-align: left;
-                        }
+                    a {
+                        text-align: left;
                     }
                 }
             }
@@ -609,15 +619,12 @@ a {
             display: inline-block;
         }
 
-        ul.main-menu {
+        ul.main-menu-spinner {
+            display: none;
             @include dropdown-ul;
             @include box-sizing(border-box);
             @include box-shadow(rgba(black, 1) 0 0 5px);
             @include border-radius(3px);
-
-            .current {
-                color: #fff;
-            }
 
             li {
                 @include dropdown-li;
@@ -646,6 +653,49 @@ a {
                     }
                 }
             }
+        }
+    }
+
+    .user-status {
+        .progress-bar {
+            width: auto;
+            //height: $progress-thickness;
+            background: none;
+            //display: inline-block;
+            //line-height: $progress-thickness;
+            border: none;
+        }
+
+        .progress-amount {
+            //display: inline-block;
+            //height: $progress-thickness;
+            //position: relative;
+            //top: -2.5px;
+            &:not(:first-child) {
+                margin-left: 0;
+            }
+
+            &.direct-support,
+            &.indirect-support,
+            &.potential-support {
+                width: auto;
+            }
+        }
+
+        .progress-number {
+            position: relative;
+            //right: 0;
+            //top: -0.3rem;
+            //height: 1rem;
+            //width: auto;
+            //padding: 0 0.2rem;
+            //border: 1px #fff solid;
+            //color: #fff;
+            //font-size: 0.75rem;
+            //line-height: 1rem;
+            //text-align: center;
+            //background-color: #fff;
+            //@include border-radius(3px);
         }
     }
 }

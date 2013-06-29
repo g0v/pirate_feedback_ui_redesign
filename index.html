@@ -25,30 +25,30 @@
         <!-- Add your site or application content here -->
 
         <section class="bar nav">
-            <a href="" class="current">  Issues
+            <a class="current" name="show-main-menu">  Issues
 </a>
-            <ul class="main-menu">
+            <ul class="main-menu-spinner">
                 <li ><a href="events.html">Events</a></li>
                 <li   class="on"
 ><a href="index.html">Issues</a></li>
                 <li ><a href="units.html">Units</a></li>
                 <li ><a href="members.html">Members</a></li>
             </ul>
-            <ul class="action">
-                <li><a href="" class="action-icon">＋</a></li>
-                <li><a href="" class="action-icon">～</a></li>
-                <li><a href="" class="action-icon">⊕</a></li>
-                <li><a href="" class="action-icon">？</a></li>
-                <li class="profile-menu"><a href="" class="action-icon">me</a>
-                    <ul>
+            <span class="action">
+                <a class="action-icon" name="new-issue">＋</a>
+                <a class="action-icon" name="show-issue-filter">～</a>
+                <a class="action-icon" name="search">⊕</a>
+                <a class="action-icon" name="show-hint">？</a></li>
+                <span class="profile-menu"><a class="action-icon" name="show-profile-menu">me</a>
+                    <ul class="profile-menu-spinner" style="display:none">
                         <li><a href="">※　Profile</a></li>
                         <li><a href="">※　Settings</a></li>
                         <li><a href="">※　Admin</a></li>
                         <li><a href="">※　Logout</a></li>
                         <li><a href="">※　About</a></li>
                     </ul>
-                </li>
-            </ul>
+                </span>
+            </span>
         </section>
 
         <section id="content-wrapper">
@@ -57,15 +57,15 @@
                 <span class="phase discussion">Discussion</span>
                 <span class="time-left meta-text">1 day 3 hrs left</span>
                 <span class="action">
-                    <a href="" class="action-icon">＋</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-delegation">● > ●-●-</a>
+                    <a class="action-icon new-initiaitve">＋</a>
+                    <a class="action-icon add-interest">☆</a>
+                    <a class="action-delegation">● > ●-●-</a>
                 </span>
             </header>
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -75,13 +75,13 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Et quo alias et doloremque aut
                 </span>
             </article>
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -91,13 +91,13 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Ipsum facere saepe maiores omnis ad rerum iure expedita
                 </span>
             </article>
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -107,7 +107,7 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Id autem ratione necessitatibus quae voluptatem voluptates aut ratione quibusdam quis et
                 </span>
             </article>
             <footer class="bar level-3">
@@ -126,8 +126,8 @@
                 <span class="phase voting">Voting</span>
                 <span class="time-left meta-text">3 days left</span>
                 <span class="action">
-                    <a href="" class="action-icon">★</a>
-                    <a href="" class="action-delegation">● > --●</a>
+                    <a class="action-icon add-interest">★</a>
+                    <a class="action-delegation">● > --●</a>
                 </span>
             </header>
             <article class="bar level-2 initiative-title">
@@ -137,7 +137,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Animi tempore eos soluta omnis odit laborum optio deserunt
                 </span>
             </article>
             <article class="bar level-2 initiative-title">
@@ -147,7 +147,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Fugit dolorem ut rerum sit veritatis quis ut
                 </span>
             </article>
             <article class="bar level-2 initiative-title">
@@ -157,7 +157,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Et atque cupiditate est mollitia et repellat a autem officia cumque sunt enim accusamus asperiores
                 </span>
             </article>
             <article class="bar level-2 initiative-title">
@@ -167,7 +167,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Perferendis omnis laboriosam molestias et natus omnis cum inventore beatae corrupti
                 </span>
             </article>
             <article class="bar level-2 initiative-title">
@@ -177,7 +177,7 @@
                     </a>
                 </span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Distinctio ut corporis expedita possimus ut
                 </span>
             </article>
             <footer class="bar level-3">
@@ -196,15 +196,15 @@
                 <span class="phase admission">New</span>
                 <span class="time-left meta-text">5 days left</span>
                 <span class="action">
-                    <a href="" class="action-icon">＋</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-delegation">● > -●●-●</a>
+                    <a class="action-icon new-initiaitve">＋</a>
+                    <a class="action-icon add-interest">☆</a>
+                    <a class="action-delegation">● > -●●-●</a>
                 </span>
             </header>
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -214,13 +214,13 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Eos labore facilis dolores quo eum
                 </span>
             </article>
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -230,7 +230,7 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Quibusdam ut maxime omnis ut cumque adipisci unde nam qui consectetur perferendis et corporis
                 </span>
             </article>
             <footer class="bar level-3">
@@ -249,15 +249,15 @@
                 <span class="phase verification">Frozen</span>
                 <span class="time-left meta-text">13 days left</span>
                 <span class="action">
-                    <a href="" class="action-icon">＋</a>
-                    <a href="" class="action-icon">☆</a>
-                    <a href="" class="action-delegation">● > --●</a>
+                    <a class="action-icon new-initiaitve">＋</a>
+                    <a class="action-icon add-interest">☆</a>
+                    <a class="action-delegation">● > --●</a>
                 </span>
             </header>
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -267,13 +267,13 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Quia est ipsa enim aut repellat qui vel magnam ut excepturi reprehenderit
                 </span>
             </article>
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -283,13 +283,13 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Consequatur suscipit ut atque non ut corporis esse rerum
                 </span>
             </article>
             <article class="bar level-2 initiative-title">
-                <span class="user-status">
+                <span class="user-status action">
                     <span class="status direct-support">♂</span>
-                    <a class="progress-bar" href="">
+                    <a class="progress-bar" name="show-initiative-members">
                         <span class="progress-amount direct-support"></span>
                         <span class="progress-amount indirect-support">
                             <span class="progress-number">25</span>
@@ -299,7 +299,7 @@
                 </span>
                 <span class="meta-text">i26</span>
                 <span class="description-icon">■</span>
-                <span>Hello world! This is HTML5 Boilerplate.
+                <span>Voluptatem qui molestiae sunt et quis exercitationem error necessitatibus
                 </span>
             </article>
             <footer class="bar level-3">
@@ -316,12 +316,12 @@
             </footer>
         </section>
 
-        <!-- javascript
+        <!-- javascript-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        -->
+        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>
