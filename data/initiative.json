@@ -1,6 +1,461 @@
 {
+   "issues" : {
+      "6" : {
+         "population" : 7,
+         "voter_count" : null,
+         "state" : "verification",
+         "admission_time" : {
+            "days" : 8
+         },
+         "latest_snapshot_event" : "periodic",
+         "snapshot" : "2013-06-29T12:35:51.590Z",
+         "id" : 6,
+         "closed" : null,
+         "area_id" : 2,
+         "verification_time" : {
+            "days" : 8
+         },
+         "half_frozen" : "2013-06-22T04:39:07.544Z",
+         "created" : "2013-06-07T04:38:17.576Z",
+         "status_quo_schulze_rank" : null,
+         "policy_id" : 1,
+         "accepted" : "2013-06-07T04:38:47.542Z",
+         "discussion_time" : {
+            "days" : 15
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "days" : 15
+         },
+         "fully_frozen" : null
+      },
+      "11" : {
+         "population" : 5,
+         "voter_count" : 0,
+         "state" : "finished_without_winner",
+         "admission_time" : {
+            "minutes" : 1
+         },
+         "latest_snapshot_event" : "full_freeze",
+         "snapshot" : "2013-06-17T18:50:26.056Z",
+         "id" : 11,
+         "closed" : "2013-06-17T18:51:33.367Z",
+         "area_id" : 2,
+         "verification_time" : {
+            "minutes" : 1
+         },
+         "half_frozen" : "2013-06-17T18:49:19.130Z",
+         "created" : "2013-06-17T18:46:45.979Z",
+         "status_quo_schulze_rank" : 1,
+         "policy_id" : 11,
+         "accepted" : "2013-06-17T18:47:00.942Z",
+         "discussion_time" : {
+            "minutes" : 2
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "minutes" : 1
+         },
+         "fully_frozen" : "2013-06-17T18:50:26.056Z"
+      },
+      "3" : {
+         "population" : 5,
+         "voter_count" : null,
+         "state" : "voting",
+         "admission_time" : {
+            "days" : 8
+         },
+         "latest_snapshot_event" : "full_freeze",
+         "snapshot" : "2013-06-29T11:55:03.574Z",
+         "id" : 3,
+         "closed" : null,
+         "area_id" : 2,
+         "verification_time" : {
+            "days" : 8
+         },
+         "half_frozen" : "2013-06-21T11:54:52.955Z",
+         "created" : "2013-06-06T11:54:05.344Z",
+         "status_quo_schulze_rank" : null,
+         "policy_id" : 1,
+         "accepted" : "2013-06-06T11:54:37.203Z",
+         "discussion_time" : {
+            "days" : 15
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "days" : 15
+         },
+         "fully_frozen" : "2013-06-29T11:55:03.574Z"
+      },
+      "7" : {
+         "population" : 11,
+         "voter_count" : 26,
+         "state" : "finished_with_winner",
+         "admission_time" : null,
+         "latest_snapshot_event" : "full_freeze",
+         "snapshot" : "2013-06-08T09:01:57.680Z",
+         "id" : 7,
+         "closed" : "2013-06-08T10:12:22.551Z",
+         "area_id" : 14,
+         "verification_time" : {
+            "minutes" : 25
+         },
+         "half_frozen" : "2013-06-08T08:36:24.557Z",
+         "created" : "2013-06-07T16:36:14.171Z",
+         "status_quo_schulze_rank" : 11,
+         "policy_id" : 13,
+         "accepted" : "2013-06-07T16:36:14.171Z",
+         "discussion_time" : {
+            "hours" : 16
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "hours" : 1,
+            "minutes" : 10
+         },
+         "fully_frozen" : "2013-06-08T09:01:57.680Z"
+      },
+      "9" : {
+         "population" : 7,
+         "voter_count" : null,
+         "state" : "verification",
+         "admission_time" : {
+            "days" : 8
+         },
+         "latest_snapshot_event" : "periodic",
+         "snapshot" : "2013-06-29T12:35:51.526Z",
+         "id" : 9,
+         "closed" : null,
+         "area_id" : 3,
+         "verification_time" : {
+            "days" : 8
+         },
+         "half_frozen" : "2013-06-26T17:32:51.080Z",
+         "created" : "2013-06-11T17:32:00.675Z",
+         "status_quo_schulze_rank" : null,
+         "policy_id" : 1,
+         "accepted" : "2013-06-11T17:32:24.129Z",
+         "discussion_time" : {
+            "days" : 15
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "days" : 15
+         },
+         "fully_frozen" : null
+      },
+      "2" : {
+         "population" : 6,
+         "voter_count" : 4,
+         "state" : "finished_with_winner",
+         "admission_time" : null,
+         "latest_snapshot_event" : "full_freeze",
+         "snapshot" : "2013-06-06T17:03:26.105Z",
+         "id" : 2,
+         "closed" : "2013-06-07T17:03:38.098Z",
+         "area_id" : 1,
+         "verification_time" : {
+            "hours" : 12
+         },
+         "half_frozen" : "2013-06-06T05:03:19.397Z",
+         "created" : "2013-06-05T17:03:13.272Z",
+         "status_quo_schulze_rank" : 3,
+         "policy_id" : 5,
+         "accepted" : "2013-06-05T17:03:13.272Z",
+         "discussion_time" : {
+            "hours" : 12
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "hours" : 24
+         },
+         "fully_frozen" : "2013-06-06T17:03:26.105Z"
+      },
+      "8" : {
+         "population" : 1,
+         "voter_count" : null,
+         "state" : "verification",
+         "admission_time" : {
+            "days" : 8
+         },
+         "latest_snapshot_event" : "periodic",
+         "snapshot" : "2013-06-29T12:35:51.567Z",
+         "id" : 8,
+         "closed" : null,
+         "area_id" : 21,
+         "verification_time" : {
+            "days" : 8
+         },
+         "half_frozen" : "2013-06-23T18:45:52.166Z",
+         "created" : "2013-06-08T18:45:21.818Z",
+         "status_quo_schulze_rank" : null,
+         "policy_id" : 1,
+         "accepted" : "2013-06-08T18:45:22.913Z",
+         "discussion_time" : {
+            "days" : 15
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "days" : 15
+         },
+         "fully_frozen" : null
+      },
+      "1" : {
+         "population" : 8,
+         "voter_count" : null,
+         "state" : "voting",
+         "admission_time" : {
+            "days" : 8
+         },
+         "latest_snapshot_event" : "full_freeze",
+         "snapshot" : "2013-06-28T08:21:31.207Z",
+         "id" : 1,
+         "closed" : null,
+         "area_id" : 3,
+         "verification_time" : {
+            "days" : 8
+         },
+         "half_frozen" : "2013-06-20T08:21:04.889Z",
+         "created" : "2013-06-05T08:20:31.066Z",
+         "status_quo_schulze_rank" : null,
+         "policy_id" : 1,
+         "accepted" : "2013-06-05T08:20:46.877Z",
+         "discussion_time" : {
+            "days" : 15
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "days" : 15
+         },
+         "fully_frozen" : "2013-06-28T08:21:31.207Z"
+      },
+      "4" : {
+         "population" : 2,
+         "voter_count" : 1,
+         "state" : "finished_with_winner",
+         "admission_time" : {
+            "minutes" : 1
+         },
+         "latest_snapshot_event" : "full_freeze",
+         "snapshot" : "2013-06-06T11:59:32.375Z",
+         "id" : 4,
+         "closed" : "2013-06-06T12:00:40.310Z",
+         "area_id" : 2,
+         "verification_time" : {
+            "minutes" : 1
+         },
+         "half_frozen" : "2013-06-06T11:58:26.159Z",
+         "created" : "2013-06-06T11:55:57.852Z",
+         "status_quo_schulze_rank" : 2,
+         "policy_id" : 11,
+         "accepted" : "2013-06-06T11:56:13.446Z",
+         "discussion_time" : {
+            "minutes" : 2
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "minutes" : 1
+         },
+         "fully_frozen" : "2013-06-06T11:59:32.375Z"
+      },
+      "10" : {
+         "population" : 4,
+         "voter_count" : null,
+         "state" : "verification",
+         "admission_time" : {
+            "days" : 8
+         },
+         "latest_snapshot_event" : "periodic",
+         "snapshot" : "2013-06-29T12:35:51.490Z",
+         "id" : 10,
+         "closed" : null,
+         "area_id" : 1,
+         "verification_time" : {
+            "days" : 8
+         },
+         "half_frozen" : "2013-06-29T01:48:14.995Z",
+         "created" : "2013-06-14T01:47:39.655Z",
+         "status_quo_schulze_rank" : null,
+         "policy_id" : 1,
+         "accepted" : "2013-06-14T01:48:00.697Z",
+         "discussion_time" : {
+            "days" : 15
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "days" : 15
+         },
+         "fully_frozen" : null
+      },
+      "5" : {
+         "population" : 7,
+         "voter_count" : null,
+         "state" : "verification",
+         "admission_time" : {
+            "days" : 8
+         },
+         "latest_snapshot_event" : "periodic",
+         "snapshot" : "2013-06-29T12:35:51.415Z",
+         "id" : 5,
+         "closed" : null,
+         "area_id" : 2,
+         "verification_time" : {
+            "days" : 8
+         },
+         "half_frozen" : "2013-06-22T04:32:48.322Z",
+         "created" : "2013-06-07T04:32:07.409Z",
+         "status_quo_schulze_rank" : null,
+         "policy_id" : 1,
+         "accepted" : "2013-06-07T04:32:40.436Z",
+         "discussion_time" : {
+            "days" : 15
+         },
+         "cleaned" : null,
+         "voting_time" : {
+            "days" : 15
+         },
+         "fully_frozen" : null
+      }
+   },
    "status" : "ok",
-   "policies" : {},
+   "policies" : {
+      "11" : {
+         "direct_majority_num" : 1,
+         "direct_majority_strict" : true,
+         "no_multistage_majority" : true,
+         "initiative_quorum_den" : 10,
+         "initiative_quorum_num" : 1,
+         "direct_majority_non_negative" : 0,
+         "no_reverse_beat_path" : true,
+         "indirect_majority_positive" : 0,
+         "admission_time" : {
+            "minutes" : 1
+         },
+         "id" : 11,
+         "indirect_majority_non_negative" : 0,
+         "active" : true,
+         "name" : "光速投票",
+         "verification_time" : {
+            "minutes" : 1
+         },
+         "indirect_majority_strict" : true,
+         "indirect_majority_den" : 2,
+         "description" : "",
+         "issue_quorum_num" : 1,
+         "issue_quorum_den" : 10,
+         "index" : 1,
+         "indirect_majority_num" : 1,
+         "direct_majority_positive" : 0,
+         "discussion_time" : {
+            "minutes" : 2
+         },
+         "voting_time" : {
+            "minutes" : 1
+         },
+         "direct_majority_den" : 2
+      },
+      "1" : {
+         "direct_majority_num" : 1,
+         "direct_majority_strict" : true,
+         "no_multistage_majority" : false,
+         "initiative_quorum_den" : 100,
+         "initiative_quorum_num" : 10,
+         "direct_majority_non_negative" : 0,
+         "no_reverse_beat_path" : true,
+         "indirect_majority_positive" : 0,
+         "admission_time" : {
+            "days" : 8
+         },
+         "id" : 1,
+         "indirect_majority_non_negative" : 0,
+         "active" : true,
+         "name" : "一般討論",
+         "verification_time" : {
+            "days" : 8
+         },
+         "indirect_majority_strict" : true,
+         "indirect_majority_den" : 2,
+         "description" : "",
+         "issue_quorum_num" : 10,
+         "issue_quorum_den" : 100,
+         "index" : 4,
+         "indirect_majority_num" : 1,
+         "direct_majority_positive" : 0,
+         "discussion_time" : {
+            "days" : 15
+         },
+         "voting_time" : {
+            "days" : 15
+         },
+         "direct_majority_den" : 2
+      },
+      "13" : {
+         "direct_majority_num" : 1,
+         "direct_majority_strict" : true,
+         "no_multistage_majority" : true,
+         "initiative_quorum_den" : 20,
+         "initiative_quorum_num" : 1,
+         "direct_majority_non_negative" : 0,
+         "no_reverse_beat_path" : true,
+         "indirect_majority_positive" : 0,
+         "admission_time" : null,
+         "id" : 13,
+         "indirect_majority_non_negative" : 0,
+         "active" : true,
+         "name" : "黑客松最佳專案獎",
+         "verification_time" : {
+            "minutes" : 25
+         },
+         "indirect_majority_strict" : true,
+         "indirect_majority_den" : 2,
+         "description" : "",
+         "issue_quorum_num" : null,
+         "issue_quorum_den" : null,
+         "index" : 12,
+         "indirect_majority_num" : 1,
+         "direct_majority_positive" : 0,
+         "discussion_time" : {
+            "hours" : 16
+         },
+         "voting_time" : {
+            "minutes" : 45
+         },
+         "direct_majority_den" : 2
+      },
+      "5" : {
+         "direct_majority_num" : 1,
+         "direct_majority_strict" : true,
+         "no_multistage_majority" : true,
+         "initiative_quorum_den" : 100,
+         "initiative_quorum_num" : 10,
+         "direct_majority_non_negative" : 0,
+         "no_reverse_beat_path" : true,
+         "indirect_majority_positive" : 0,
+         "admission_time" : null,
+         "id" : 5,
+         "indirect_majority_non_negative" : 0,
+         "active" : true,
+         "name" : "快速投票",
+         "verification_time" : {
+            "hours" : 12
+         },
+         "indirect_majority_strict" : true,
+         "indirect_majority_den" : 2,
+         "description" : "",
+         "issue_quorum_num" : null,
+         "issue_quorum_den" : null,
+         "index" : 10,
+         "indirect_majority_num" : 1,
+         "direct_majority_positive" : 0,
+         "discussion_time" : {
+            "hours" : 12
+         },
+         "voting_time" : {
+            "hours" : 24
+         },
+         "direct_majority_den" : 2
+      }
+   },
    "result" : [
       {
          "revoked" : null,
