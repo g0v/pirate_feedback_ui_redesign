@@ -129,6 +129,10 @@ textarea {
 }
 
 @mixin action-seperator($color: #ccc, $left: -1rem, $top: 0) {
+    & {
+        position: relative;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -357,9 +361,6 @@ a {
         overflow: visible;
 
         li {
-            height: 2rem;
-            position: relative;
-
         }
 
         a {
@@ -368,7 +369,7 @@ a {
         }
     }
 
-    .main-menu {
+    .main-menu-spinner {
         li {
             width: 10%;
             min-width: 6rem;
@@ -388,26 +389,28 @@ a {
     }
 
     .action {
-        li {
-            width: 3rem;
+        a.action-icon {
+            margin: 0 0.5rem;
+        }
 
-            &.profile-menu {
-                margin-left: 1rem;
-                @include action-seperator(#424242, -0.5rem, 0.25rem);
+        .profile-menu {
+            display: inline-block;
+            line-height: 2rem;
+            margin-left: 1rem;
+            @include action-seperator(#424242, -0.5rem, 0.25rem);
 
-                ul {
-                    @include dropdown-ul(auto, 0, 2.5rem);
+            ul {
+                @include dropdown-ul(auto, 0, 2.5rem);
+                @include box-sizing(border-box);
+                @include box-shadow(rgba(black, 1) 0 0 5px);
+                @include border-radius(3px);
+
+                li {
+                    @include dropdown-li;
                     @include box-sizing(border-box);
-                    @include box-shadow(rgba(black, 1) 0 0 5px);
-                    @include border-radius(3px);
 
-                    li {
-                        @include dropdown-li;
-                        @include box-sizing(border-box);
-
-                        a {
-                            text-align: left;
-                        }
+                    a {
+                        text-align: left;
                     }
                 }
             }
@@ -616,7 +619,7 @@ a {
             display: inline-block;
         }
 
-        ul.main-menu {
+        ul.main-menu-spinner {
             display: none;
             @include dropdown-ul;
             @include box-sizing(border-box);

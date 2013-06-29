@@ -8,7 +8,10 @@
   Issues
 <% end %>
 <% @navactions = capture do %>
-                <li><a href="" class="action-icon">⊕</a></li>
+                <a class="action-icon" name="show-pad">□</a>
+                <a class="action-icon" name="collapse-all-initiatives">↑</a>
+                <a class="action-icon" name="expand-all-initiatives">↓</a>
+                <a class="action-icon" name="search">⊕</a>
 <% end %>
 
             <div class="issue-detail-title">
@@ -31,23 +34,41 @@
 
             <div class="initiative-wrapper">
 <%= render :partial => "initiative" %>
+                <div class="suggestion-wrapper">
 <%= render :partial => "suggestions" %>
-<%= render :partial => "arguments-pro" %>
-<%= render :partial => "arguments-cons" %>
+                </div>
+                <div class="argument-pro-wrapper">
+<%= render :partial => "argument-pro" %>
+                </div>
+                <div class="argument-cons-wrapper">
+<%= render :partial => "argument-cons" %>
+                </div>
             </div>
 
             <div class="initiative-wrapper">
 <%= render :partial => "initiative" %>
+                <div class="suggestion-wrapper">
 <%= render :partial => "suggestions" %>
-<%= render :partial => "arguments-pro" %>
-<%= render :partial => "arguments-cons" %>
+                </div>
+                <div class="argument-pro-wrapper">
+<%= render :partial => "argument-pro" %>
+                </div>
+                <div class="argument-cons-wrapper">
+<%= render :partial => "argument-cons" %>
+                </div>
             </div>
 
             <div class="initiative-wrapper">
 <%= render :partial => "initiative" %>
+                <div class="suggestion-wrapper">
 <%= render :partial => "suggestions" %>
-<%= render :partial => "arguments-pro" %>
-<%= render :partial => "arguments-cons" %>
+                </div>
+                <div class="argument-pro-wrapper">
+<%= render :partial => "argument-pro" %>
+                </div>
+                <div class="argument-cons-wrapper">
+<%= render :partial => "argument-cons" %>
+                </div>
             </div>
 
             <footer class="bar level-1 meta-text">
