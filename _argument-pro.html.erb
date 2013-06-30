@@ -1,10 +1,42 @@
-            <aside class="bar level-2 initiative-argument">
-                <span class="action">
-                    <a class="action-icon"  name="new-argument-pro">＋</a>
-                    <a class="action-icon" name="collapse-argument-pro" style="display:none">↑</a>
-                    <a class="action-icon" name="expand-argument-pro">↓</a>
+        <div class="argument-pro-wrapper">
+            <header class="bar level-3 argument-title">
+                <span class="user-status action">
+                    <a name="show-argument-pro-members">
+                        <span class="status direct-support">♀</span>
+                        <span class="rating">+25</span>
+                        <span class="status direct-support">♀</span>
+                        <span class="rating">-25</span>
+                        <span class="rating">= 0</span>
+                    </a>
                 </span>
-            	<span>Argument Pros (2)</span>
+                <span class="description-icon">■</span>
+                <span><%= lorem_sentence %></span>
+            </header>
+            <aside class="bar level-3 argument-members" style="display:none">
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
+                <span class="member">
+                    <span>●</span>
+                    <span class="status">♂</span>
+                </span>
             </aside>
-<%= render :partial => "argument" %>
-<%= render :partial => "argument" %>
+            <aside class="bar level-3 argument-meta" style="display:none">
+                <span class="action">
+                    <a class="action-icon">☆</a>
+                    <a class="action-icon">☆</a>
+                </span>
+                <span class="meta-text">
+                    <span>Yesterday 17:32 ● clkao</span>
+                </span>
+            </aside>
+            <article class="bar level-3 argument-content" style="display:none">
+                <span><%= lorem_paragraph %>
+                </span>
+            </article>
+        </div>

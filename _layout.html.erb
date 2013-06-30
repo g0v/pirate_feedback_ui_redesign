@@ -25,11 +25,17 @@
 
         <section class="bar nav">
             <a class="current" name="show-main-menu"><%= @navcurrent %></a>
-            <ul class="main-menu-spinner">
+            <ul class="main-menu">
                 <li <%= @menuevents %>><a href="events.html">Events</a></li>
                 <li <%= @menuissues %>><a href="index.html">Issues</a></li>
                 <li <%= @menuunits %>><a href="units.html">Units</a></li>
                 <li <%= @menumembers %>><a href="members.html">Members</a></li>
+            </ul>
+            <ul class="main-menu-spinner" style="display:none">
+                <li><a href="events.html">Events</a></li>
+                <li><a href="index.html">Issues</a></li>
+                <li><a href="units.html">Units</a></li>
+                <li><a href="members.html">Members</a></li>
             </ul>
             <span class="action">
 <%= @navactions %>
